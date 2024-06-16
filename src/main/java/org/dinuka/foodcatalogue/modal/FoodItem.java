@@ -14,13 +14,13 @@ import lombok.*;
 public class FoodItem {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
-     private String name;
+    private String name;
     private String description;
     private boolean isVeg;
     private double price;
     private Long restaurantId;
     private  Integer quantity;
-
 
 }

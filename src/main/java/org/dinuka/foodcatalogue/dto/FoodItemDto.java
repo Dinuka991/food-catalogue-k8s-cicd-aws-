@@ -1,16 +1,24 @@
 package org.dinuka.foodcatalogue.dto;
 
 public record FoodItemDto(
-         Long id,
-         String username,
-         String email
+         Long id ,
+         String name ,
+         String description ,
+         boolean isVeg ,
+         double price ,
+         Long restaurantId ,
+         Integer quantity
 ) {
     @Override
     public String toString() {
-        return "UserDto{" +
+        return "FoodItemDto{" +
                 "id=" + id +
-                ", userName='" + username + '\'' +
-                ", email='" + email + '\'' +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", isVeg=" + isVeg +
+                ", price=" + price +
+                ", restaurantId=" + restaurantId +
+                ", quantity=" + quantity +
                 '}';
     }
 }
